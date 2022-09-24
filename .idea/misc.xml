@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable/tab_background.xml" value="0.114" />
+        <entry key="app/src/main/res/drawable/tab_selected_background.xml" value="0.2225" />
+        <entry key="app/src/main/res/drawable/tab_unselected_background.xml" value="0.114" />
+        <entry key="app/src/main/res/drawable/toolbar_backage.xml" value="0.1085" />
+        <entry key="app/src/main/res/layout-v23/activity_home.xml" value="0.2515625" />
+        <entry key="app/src/main/res/layout/activity_home 2.xml" value="0.2515625" />
+        <entry key="app/src/main/res/layout/activity_home.xml" value="0.2515625" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1824074074074074" />
+        <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.2515625" />
+        <entry key="app/src/main/res/layout/app_bar_home.xml" value="0.2515625" />
+        <entry key="app/src/main/res/layout/content_home.xml" value="0.2515625" />
+        <entry key="app/src/main/res/layout/fragment_categories.xml" value="0.2515625" />
+        <entry key="app/src/main/res/layout/fragment_news.xml" value="0.2515625" />
+        <entry key="app/src/main/res/layout/fragment_settings.xml" value="0.2515625" />
+        <entry key="app/src/main/res/layout/item_news.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/left_side_category.xml" value="0.25052083333333336" />
+        <entry key="app/src/main/res/layout/nav_header_home.xml" value="0.2515625" />
+        <entry key="app/src/main/res/layout/right_side_category.xml" value="0.2515625" />
+        <entry key="app/src/main/res/menu/activity_main_drawer.xml" value="0.2515625" />
+        <entry key="app/src/main/res/menu/home.xml" value="0.2515625" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

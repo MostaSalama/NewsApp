@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">NewsApp</string>
+    <string name="title_activity_home">HomeActivity</string>
+
+    <string name="settings">Settings</string>
+    <string name="categories">Categories</string>
+    <string name="news_app">News App</string>
+    <string name="pick_your_category_of_interest">Pick your category of interest</string>
+    <string name="sports">sports</string>
+    <string name="technology">technology</string>
+    <string name="health">health</string>
+    <string name="business">business</string>
+    <string name="general">general</string>
+    <string name="science">science</string>
+</resources>
