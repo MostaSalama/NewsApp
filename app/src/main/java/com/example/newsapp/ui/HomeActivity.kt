@@ -7,7 +7,7 @@ import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.commit
-import com.example.newsapp.Model.Category
+import com.example.newsapp.model.Category
 import com.example.newsapp.R
 import com.example.newsapp.ui.catigories.CategoriesFragment
 import com.example.newsapp.ui.news.NewsFragment

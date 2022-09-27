@@ -1,18 +1,14 @@
 package com.example.newsapp.ui.catigories
 
 import android.annotation.SuppressLint
-import android.os.Build
-import android.provider.CalendarContract
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
-import androidx.annotation.RequiresApi
 import androidx.core.content.ContextCompat
-import androidx.core.graphics.red
 import androidx.recyclerview.widget.RecyclerView
-import com.example.newsapp.Model.Category
+import com.example.newsapp.model.Category
 import com.example.newsapp.R
 import com.google.android.material.card.MaterialCardView
 

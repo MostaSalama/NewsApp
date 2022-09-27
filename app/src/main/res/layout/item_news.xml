@@ -1,64 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:padding="8dp"
-    >
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <ProgressBar
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        style="@android:style/Widget.ProgressBar.Small"
-        app:layout_constraintBottom_toBottomOf="@id/image"
-        app:layout_constraintTop_toTopOf="@id/image"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        />
+    <data>
 
-    <com.makeramen.roundedimageview.RoundedImageView
-        android:id="@+id/image"
+        <variable
+            name="item"
+            type="com.example.newsapp.model.ArticlesItem" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:src="@tools:sample/backgrounds/scenic"
-        android:scaleType="centerCrop"
-        />
-
-    <TextView
-        android:id="@+id/author"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/color_grey"
-        app:layout_constraintTop_toBottomOf="@id/image"
-        tools:text="author"
-        />
+        android:padding="8dp">
 
-    <TextView
-        android:id="@+id/title"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/author"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:textColor="@color/black"
-        tools:text="author"
-        />
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@android:style/Widget.ProgressBar.Small"
+            app:layout_constraintBottom_toBottomOf="@id/image"
+            app:layout_constraintTop_toTopOf="@id/image"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
 
-    <TextView
-        android:id="@+id/date_time"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/title"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:textColor="@color/color_grey"
-        tools:text="date"
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:src="@tools:sample/backgrounds/scenic"
+            android:scaleType="centerCrop"
+            imageUrl="@{item.urlToImage}"
+            />
 
-        />
+        <TextView
+            android:id="@+id/author"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_grey"
+            app:layout_constraintTop_toBottomOf="@id/image"
+            tools:text="author"
+            android:text="@{item.author}"
+            />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/author"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textColor="@color/black"
+            tools:text="title"
+            android:text="@{item.title}"
+            />
+
+        <TextView
+            android:id="@+id/date_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textColor="@color/color_grey"
+            tools:text="date"
+            android:text="@{item.publishedAt}"
+
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

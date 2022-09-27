@@ -5,12 +5,11 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.ProgressBar
 import androidx.core.view.isVisible
-import androidx.core.view.marginStart
 import androidx.recyclerview.widget.RecyclerView
-import com.example.newsapp.Model.Constant
-import com.example.newsapp.Model.NewsResponse
-import com.example.newsapp.Model.SourcesItem
-import com.example.newsapp.Model.SourcesResponse
+import com.example.newsapp.model.Constant
+import com.example.newsapp.model.NewsResponse
+import com.example.newsapp.model.SourcesItem
+import com.example.newsapp.model.SourcesResponse
 import com.example.newsapp.api.ApiManager
 import com.google.android.material.tabs.TabLayout
 import retrofit2.Call
